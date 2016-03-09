@@ -1037,7 +1037,7 @@ dist-hook:
 	fi
 	if type groff > /dev/null 2>&1 && type ps2pdf > /dev/null 2>&1; then \
 		dest="$(distdir)/doc/man" && \
-		$(MKDIR_P) "$$dest/pdf-a4" "$$dest/pdf-letter" "$$dest/txt" && \
+		$(mkdir_p) "$$dest/pdf-a4" "$$dest/pdf-letter" "$$dest/txt" && \
 		for FILE in $(manfiles); do \
 			BASE=`basename $$FILE .1` && \
 			sh "$(srcdir)/build-aux/manconv.sh" pdf a4 \
