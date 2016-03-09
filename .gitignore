@@ -8,7 +8,6 @@
 *.la
 *.lo
 *.o
-Makefile.in
 
 /ABOUT-NLS
 /autom4te.cache
